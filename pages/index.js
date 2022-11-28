@@ -1,6 +1,10 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import Image from "next/image";
+
+import pic1 from "../public/images/course-2-1.jpg";
+import pic2 from "../public/images/course-2-2.jpg";
 
 export default function Home() {
   return (
@@ -28,6 +32,14 @@ export default function Home() {
           </ul>
         </div>
       </main>
+      <section>
+        <Image
+          src={pic1}
+          width="400"
+          style={{ marginRight: "20px", borderRadius: "10px" }}
+        />
+        <Image src={pic2} width="400" style={{ borderRadius: "10px" }} />
+      </section>
     </div>
   );
 }
